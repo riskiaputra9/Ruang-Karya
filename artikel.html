@@ -3,35 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artikel - Ruang Karya</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Artikel | Ruang Karya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Nunito',sans-serif; background:#faf9f6; color:#333; }
+    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
+    nav { display:flex; justify-content:center; padding:1rem; }
+    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:#f4f4f9; margin:0 0.3rem; transition:0.3s; color:#333; font-weight:600; }
+    nav a:hover { background:#dcd6f7; }
+    .hero { text-align:center; padding:3rem 1.5rem; max-width:700px; margin:auto; }
+    .hero h1 { font-size:2.3rem; margin-bottom:0.5rem; }
+    .content { max-width:900px; margin:auto; padding:2rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; }
+    .card { background:#fff; border-radius:15px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.05); transition:0.3s; }
+    .card img { width:100%; height:180px; object-fit:cover; }
+    .card-body { padding:1rem 1.2rem; }
+    .card h3 { margin-top:0; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.08); }
+    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>📰 Artikel</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
-      <a href="about.html">Tentang</a>
+      <a href="tentang.html">Tentang</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Daftar Artikel</h2>
-    <section id="karyaList"></section>
-  </main>
+  <section class="hero">
+    <h1>📚 Artikel</h1>
+    <p>Kumpulan tulisan mendalam seputar pemikiran, refleksi, dan ide-ide yang lebih panjang. Cocok buat kamu yang ingin bacaan lebih serius tapi tetap santai. 🌿</p>
+  </section>
+
+  <section class="content">
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?books,study" alt="Membaca">
+      <div class="card-body">
+        <h3>Pentingnya Membaca di Era Digital</h3>
+        <p>Di tengah derasnya arus informasi, membaca dengan tenang adalah bentuk perlawanan kecil terhadap distraksi.</p>
+        <a href="#">Baca selengkapnya →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?technology,thinking" alt="Teknologi">
+      <div class="card-body">
+        <h3>Teknologi dan Ruang Hening</h3>
+        <p>Kita hidup di dunia yang nyaris tak pernah diam. Bagaimana teknologi bisa berdampingan dengan kebutuhan kita akan keheningan?</p>
+        <a href="#">Baca selengkapnya →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/600x400/?life,journey" alt="Perjalanan">
+      <div class="card-body">
+        <h3>Belajar dari Perjalanan Hidup</h3>
+        <p>Setiap langkah dalam perjalanan menyimpan pelajaran. Artikel ini mencoba menangkapnya lewat refleksi sederhana.</p>
+        <a href="#">Baca selengkapnya →</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Ruang Karya</p>
+    <p>© 2025 Ruang Karya • Dibuat dengan hati 💜</p>
   </footer>
-
-  <script src="js/kategori.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      loadKategori("Artikel");
-    });
-  </script>
 </body>
 </html>
