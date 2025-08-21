@@ -19,23 +19,41 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h2>Selamat Datang</h2>
-      <p>Kumpulan tulisan, artikel, dan buku sebagai jejak pemikiran.</p>
-    </section>
+  <section class="hero">
+    <h2>Selamat Datang di Ruang Karya</h2>
+    <p>Tempat saya mendokumentasikan tulisan, artikel, dan buku yang telah saya buat. 
+    Semua karya tersimpan di sini sebagai jejak refleksi dan pemikiran.</p>
+  </section>
 
-    <section class="controls">
-      <input type="text" id="searchInput" placeholder="🔍 Cari karya...">
-      <select id="filterKategori">
-        <option value="All">Semua Kategori</option>
-        <option value="Tulisan">Tulisan</option>
-        <option value="Artikel">Artikel</option>
-        <option value="Buku">Buku</option>
-      </select>
-    </section>
+  <section class="karya-terbaru">
+    <h3>📖 Karya Terbaru</h3>
+    <ul id="latest-works">
+      <!-- Akan diisi otomatis dari data.json -->
+    </ul>
+  </section>
+</main>
 
-    <section id="karyaList" class="list"></section>
-  </main>
+<script>
+  // Ambil data dari JSON
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      // Urutkan berdasarkan tahun (terbaru dulu)
+      data.sort((a, b) => b.tahun.localeCompare(a.tahun));
+
+      // Ambil 3 karya terbaru
+      const latest = data.slice(0, 3);
+
+      const list = document.getElementById('latest-works');
+      latest.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${item.link}">${item.judul}</a> 
+          <small>(${item.kategori}, ${item.tahun})</small>`;
+        list.appendChild(li);
+      });
+    });
+</script>
+
 
   <footer>
     <p>&copy; 2025 Ruang Karya</p>
