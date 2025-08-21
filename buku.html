@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buku - Ruang Karya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Buku</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tulisan.html">Tulisan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="buku.html">Buku</a>
+      <a href="about.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Daftar Buku</h2>
+    <section id="karyaList"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ruang Karya</p>
+  </footer>
+
+  <script src="js/kategori.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      loadKategori("Buku");
+    });
+  </script>
+</body>
+</html>

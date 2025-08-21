@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruang Karya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Ruang Karya</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tulisan.html">Tulisan</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="buku.html">Buku</a>
+      <a href="about.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Selamat Datang</h2>
+      <p>Kumpulan tulisan, artikel, dan buku sebagai jejak pemikiran.</p>
+    </section>
+
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="🔍 Cari karya...">
+      <select id="filterKategori">
+        <option value="All">Semua Kategori</option>
+        <option value="Tulisan">Tulisan</option>
+        <option value="Artikel">Artikel</option>
+        <option value="Buku">Buku</option>
+      </select>
+    </section>
+
+    <section id="karyaList" class="list"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ruang Karya</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
