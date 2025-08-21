@@ -4,61 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruang Karya</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffffffaa;
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 0.6rem 1rem;
+      border-radius: 12px;
+      background: #f4f4f9;
+      margin: 0 0.3rem;
+      transition: 0.3s;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background: #dcd6f7;
+      color: #222;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #dcd6f7;
+      padding: 0.8rem 1.5rem;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #b8bedd;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>📚 Ruang Karya</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
-      <a href="about.html">Tentang</a>
+      <a href="tentang.html">Tentang</a>
     </nav>
   </header>
 
-  <main>
   <section class="hero">
-    <h2>Selamat Datang di Ruang Karya</h2>
-    <p>Tempat saya mendokumentasikan tulisan, artikel, dan buku yang telah saya buat. 
-    Semua karya tersimpan di sini sebagai jejak refleksi dan pemikiran.</p>
+    <h1>👋 Selamat datang di Ruang Karya</h1>
+    <p>Tempat saya berbagi cerita, artikel, dan buku. Santai aja, nikmati bacaan yang ada di sini 🌿</p>
+    <a href="tulisan.html" class="btn">Lihat Tulisan</a>
   </section>
 
-  <section class="karya-terbaru">
-    <h3>📖 Karya Terbaru</h3>
-    <ul id="latest-works">
-      <!-- Akan diisi otomatis dari data.json -->
-    </ul>
+  <section class="content">
+    <div class="card">
+      <h3>✍️ Tulisan Terbaru</h3>
+      <p>Coretan harian yang lahir dari secangkir kopi ☕</p>
+      <a href="tulisan.html">Baca selengkapnya →</a>
+    </div>
+
+    <div class="card">
+      <h3>📖 Artikel Pilihan</h3>
+      <p>Refleksi dan ide-ide yang saya tuangkan untuk menemani pikiran.</p>
+      <a href="artikel.html">Jelajahi Artikel →</a>
+    </div>
+
+    <div class="card">
+      <h3>📚 Kumpulan Buku</h3>
+      <p>Karya lengkap yang saya rangkai dari banyak tulisan kecil.</p>
+      <a href="buku.html">Lihat Buku →</a>
+    </div>
   </section>
-</main>
-
-<script>
-  // Ambil data dari JSON
-  fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-      // Urutkan berdasarkan tahun (terbaru dulu)
-      data.sort((a, b) => b.tahun.localeCompare(a.tahun));
-
-      // Ambil 3 karya terbaru
-      const latest = data.slice(0, 3);
-
-      const list = document.getElementById('latest-works');
-      latest.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${item.link}">${item.judul}</a> 
-          <small>(${item.kategori}, ${item.tahun})</small>`;
-        list.appendChild(li);
-      });
-    });
-</script>
-
 
   <footer>
-    <p>&copy; 2025 Ruang Karya</p>
+    <p>© 2025 Ruang Karya • Dibuat dengan hati 💜</p>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>
