@@ -6,19 +6,90 @@
   <title>Artikel - Ruang Karya</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --tosca:#20c997; --tosca-light:#e6f8f3; }
-    body { margin:0; font-family:'Nunito',sans-serif; background:#fdfdfd; color:#333; }
-    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
-    nav { display:flex; justify-content:center; padding:1rem; }
-    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
-    nav a:hover { background:var(--tosca); color:#fff; }
-    .hero { text-align:center; padding:2rem; background:var(--tosca-light); }
-    .hero h1 { color:var(--tosca); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:2rem; max-width:900px; margin:auto; }
-    .card { background:#fff; border-radius:16px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
-    .card h3 { margin-top:0; color:var(--tosca); }
-    .card p { font-size:0.95rem; color:#555; }
-    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; background:var(--tosca-light); margin-top:3rem; }
+    :root { 
+      --tosca:#20c997; 
+      --tosca-light:#e6f8f3; 
+    }
+    body { 
+      margin:0; 
+      font-family:'Nunito',sans-serif; 
+      background:#fdfdfd; 
+      color:#333; 
+    }
+    header { 
+      background:#fff; 
+      box-shadow:0 2px 6px rgba(0,0,0,0.05); 
+      position:sticky; 
+      top:0; 
+      z-index:10; 
+    }
+    nav { 
+      display:flex; 
+      justify-content:center; 
+      padding:1rem; 
+    }
+    nav a { 
+      text-decoration:none; 
+      padding:0.6rem 1rem; 
+      border-radius:12px; 
+      background:var(--tosca-light); 
+      margin:0 0.3rem; 
+      transition:0.3s; 
+      color:var(--tosca); 
+      font-weight:600; 
+    }
+    nav a:hover { 
+      background:var(--tosca); 
+      color:#fff; 
+    }
+    .hero { 
+      text-align:center; 
+      padding:2rem; 
+      background:var(--tosca-light); 
+    }
+    .hero h1 { 
+      color:var(--tosca); 
+      margin:0; 
+    }
+    .hero p { 
+      color:#555; 
+    }
+    .grid { 
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
+      gap:1.5rem; 
+      padding:2rem; 
+      max-width:1000px; 
+      margin:auto; 
+    }
+    .card { 
+      background:#fff; 
+      border-radius:16px; 
+      padding:1.5rem; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.06); 
+      transition:0.3s; 
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow:0 6px 16px rgba(0,0,0,0.08);
+    }
+    .card h3 { 
+      margin-top:0; 
+      color:var(--tosca); 
+    }
+    .card p { 
+      font-size:0.95rem; 
+      color:#555; 
+      line-height:1.6; 
+    }
+    footer { 
+      text-align:center; 
+      padding:2rem; 
+      font-size:0.9rem; 
+      color:#555; 
+      background:var(--tosca-light); 
+      margin-top:3rem; 
+    }
   </style>
 </head>
 <body>
@@ -34,17 +105,21 @@
 
   <section class="hero">
     <h1>Artikel 📚</h1>
-    <p>Tulisan mendalam tentang kehidupan, refleksi, dan gagasan baru.</p>
+    <p>Kumpulan artikel reflektif dan inspiratif dari pengalaman sehari-hari.</p>
   </section>
 
   <section class="grid">
     <div class="card">
       <h3>Hidup di Era Digital</h3>
-      <p>Bagaimana teknologi mengubah cara kita berpikir, bekerja, dan berinteraksi setiap hari.</p>
+      <p>Bagaimana teknologi mengubah cara kita berpikir, bekerja, dan berinteraksi dalam kehidupan sehari-hari.</p>
     </div>
     <div class="card">
       <h3>Menemukan Makna</h3>
-      <p>Sebuah refleksi panjang tentang arti kesederhanaan dan kebahagiaan sejati.</p>
+      <p>Sebuah refleksi sederhana tentang arti kesederhanaan, rasa syukur, dan kebahagiaan sejati.</p>
+    </div>
+    <div class="card">
+      <h3>Belajar dari Alam</h3>
+      <p>Alam selalu mengajarkan kita kesabaran, keseimbangan, dan keteguhan. Jika kita mau mendengarkan.</p>
     </div>
   </section>
 
