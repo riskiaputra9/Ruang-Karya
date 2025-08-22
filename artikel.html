@@ -6,22 +6,20 @@
   <title>Artikel | Ruang Karya</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:'Nunito',sans-serif; background:#faf9f6; color:#333; }
+    :root { --tosca:#20c997; --tosca-light:#e6f8f3; }
+    body { margin:0; font-family:'Nunito',sans-serif; background:#fdfdfd; color:#333; }
     header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
     nav { display:flex; justify-content:center; padding:1rem; }
-    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:#f4f4f9; margin:0 0.3rem; transition:0.3s; color:#333; font-weight:600; }
-    nav a:hover { background:#dcd6f7; }
-    .hero { text-align:center; padding:3rem 1.5rem; max-width:700px; margin:auto; }
-    .hero h1 { font-size:2.3rem; margin-bottom:0.5rem; }
-    .content { max-width:1000px; margin:auto; padding:2rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:2rem; }
-    .card { background:#fff; border-radius:15px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.05); transition:0.3s; display:flex; flex-direction:column; }
-    .card img { width:100%; height:200px; object-fit:cover; }
-    .card-body { padding:1.2rem; flex:1; display:flex; flex-direction:column; justify-content:space-between; }
-    .card h3 { margin-top:0; margin-bottom:0.5rem; }
-    .card p { flex:1; margin-bottom:1rem; }
-    .card a { text-decoration:none; font-weight:600; color:#5a4fcf; }
-    .card:hover { transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.08); }
-    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; }
+    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
+    nav a:hover { background:var(--tosca); color:#fff; }
+    .hero { text-align:center; padding:3rem 1.5rem; }
+    .hero h1 { font-size:2.5rem; color:var(--tosca); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:2rem; max-width:1100px; margin:auto; }
+    .card { background:#fff; border-radius:16px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); transition:0.3s; }
+    .card:hover { transform:translateY(-5px); }
+    .card h3 { margin-top:0; color:var(--tosca); }
+    .card p { color:#555; font-size:0.95rem; }
+    .card a { display:inline-block; margin-top:0.5rem; color:var(--tosca); font-weight:600; text-decoration:none; }
   </style>
 </head>
 <body>
@@ -31,46 +29,26 @@
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
-      <a href="tentang.html">Tentang</a>
+      <a href="about.html">Tentang</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>📖 Artikel Pilihan</h1>
-    <p>Berisi kumpulan artikel yang membahas refleksi, pengalaman, dan ide-ide yang saya tuangkan dengan lebih mendalam. Dibaca pelan-pelan aja, biar lebih nyantol. ☕</p>
+    <h1>📚 Artikel</h1>
+    <p>Kumpulan tulisan yang lebih panjang, mendalam, dan reflektif.</p>
   </section>
 
-  <section class="content">
+  <section class="grid">
     <div class="card">
-      <img src="https://source.unsplash.com/800x600/?reading,library" alt="Membaca">
-      <div class="card-body">
-        <h3>Menemukan Ketenangan Lewat Membaca</h3>
-        <p>Di dunia yang serba cepat, membaca bisa menjadi ruang pelarian sekaligus cara untuk menenangkan pikiran.</p>
-        <a href="#">Baca selengkapnya →</a>
-      </div>
+      <h3>Belajar dari Kesalahan</h3>
+      <p>Sebuah artikel tentang bagaimana setiap kegagalan bisa menjadi guru terbaik dalam perjalanan hidup kita.</p>
+      <a href="#">Baca selengkapnya →</a>
     </div>
-
     <div class="card">
-      <img src="https://source.unsplash.com/800x600/?technology,minimalism" alt="Teknologi">
-      <div class="card-body">
-        <h3>Minimalisme di Era Digital</h3>
-        <p>Kita butuh jeda dari notifikasi yang tiada henti. Bagaimana minimalisme bisa membantu kita mengelola teknologi?</p>
-        <a href="#">Baca selengkapnya →</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/800x600/?journey,road" alt="Perjalanan">
-      <div class="card-body">
-        <h3>Catatan Perjalanan: Belajar dari Jalan</h3>
-        <p>Setiap perjalanan selalu meninggalkan pelajaran. Artikel ini menuliskan sedikit pengalaman yang bisa jadi renungan.</p>
-        <a href="#">Baca selengkapnya →</a>
-      </div>
+      <h3>Waktu dan Makna</h3>
+      <p>Merenungkan kembali bagaimana waktu membentuk kita, dan bagaimana kita memberi makna pada setiap detik.</p>
+      <a href="#">Baca selengkapnya →</a>
     </div>
   </section>
-
-  <footer>
-    <p>© 2025 Ruang Karya • Dibuat dengan hati 💜</p>
-  </footer>
 </body>
 </html>
