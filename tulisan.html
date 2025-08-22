@@ -5,27 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tulisan - Ruang Karya</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --tosca:#20c997; --tosca-light:#e6f8f3; }
-    body { margin:0; font-family:'Nunito',sans-serif; background:#fdfdfd; color:#333; }
-    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
-    nav { display:flex; justify-content:center; padding:1rem; }
-    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
-    nav a:hover { background:var(--tosca); color:#fff; }
-    .hero { text-align:center; padding:2rem; background:var(--tosca-light); }
-    .hero h1 { color:var(--tosca); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:2rem; max-width:900px; margin:auto; }
-    .card { background:#fff; border-radius:16px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
-    .card h3 { margin-top:0; color:var(--tosca); }
-    .card p { font-size:0.95rem; color:#555; }
-    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; background:var(--tosca-light); margin-top:3rem; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav>
       <a href="index.html">Beranda</a>
-      <a href="tulisan.html">Tulisan</a>
+      <a href="tulisan.html" class="active">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
       <a href="about.html">Tentang</a>
@@ -33,18 +19,22 @@
   </header>
 
   <section class="hero">
-    <h1>Kumpulan Tulisan ✍️</h1>
-    <p>Refleksi ringan, catatan keseharian, dan ide-ide spontan.</p>
+    <h1>Tulisan ✍️</h1>
+    <p>Kumpulan tulisan ringan penuh refleksi dan cerita sederhana.</p>
   </section>
 
   <section class="grid">
     <div class="card">
-      <h3>Menikmati Hening</h3>
-      <p>Kadang kita lupa, bahwa diam dan mendengar bisa lebih bermakna daripada seribu kata.</p>
+      <h3>Menikmati Senja</h3>
+      <p>Senja mengajarkan kita bahwa setiap akhir punya keindahannya sendiri.</p>
+    </div>
+    <div class="card">
+      <h3>Kopi Pagi</h3>
+      <p>Aroma kopi selalu berhasil membangunkan semangat untuk memulai hari.</p>
     </div>
     <div class="card">
       <h3>Langkah Kecil</h3>
-      <p>Tidak semua hal harus dimulai dengan besar. Seringkali, langkah kecil yang konsisten jauh lebih berarti.</p>
+      <p>Setiap langkah kecil tetap berarti selama kita tidak berhenti.</p>
     </div>
   </section>
 
