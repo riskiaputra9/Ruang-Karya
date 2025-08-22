@@ -5,31 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruang Karya</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { --tosca:#20c997; --tosca-light:#e6f8f3; }
-    body { margin:0; font-family:'Nunito',sans-serif; background:#fdfdfd; color:#333; }
-    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
-    nav { display:flex; justify-content:center; padding:1rem; }
-    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
-    nav a:hover { background:var(--tosca); color:#fff; }
-    .hero { text-align:center; padding:3rem 1.5rem; background:linear-gradient(135deg,var(--tosca-light),#fff); }
-    .hero h1 { font-size:2.5rem; color:var(--tosca); margin-bottom:1rem; }
-    .hero p { font-size:1.1rem; max-width:600px; margin:auto; color:#444; }
-    .btn { display:inline-block; margin-top:1.5rem; padding:0.8rem 1.6rem; border-radius:12px; background:var(--tosca); color:#fff; text-decoration:none; font-weight:600; transition:0.3s; }
-    .btn:hover { background:#17a589; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:2rem; max-width:1000px; margin:auto; }
-    .card { background:#fff; border-radius:16px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); transition:0.3s; text-align:center; }
-    .card:hover { transform:translateY(-5px); }
-    .card h3 { margin-top:0; color:var(--tosca); }
-    .card p { font-size:0.95rem; color:#555; }
-    .card a { display:inline-block; margin-top:0.5rem; color:var(--tosca); font-weight:600; text-decoration:none; }
-    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; background:var(--tosca-light); margin-top:3rem; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html">Beranda</a>
+      <a href="index.html" class="active">Beranda</a>
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
@@ -39,25 +20,24 @@
 
   <section class="hero">
     <h1>Selamat Datang di Ruang Karya 🌿</h1>
-    <p>Sebuah ruang sederhana untuk menulis, berbagi ide, dan menyimpan karya yang lahir dari pengalaman sehari-hari.</p>
-    <a href="tulisan.html" class="btn">Lihat Tulisan</a>
+    <p>Sebuah ruang sederhana untuk berbagi tulisan, artikel, dan karya yang lahir dari perjalanan hidup.</p>
   </section>
 
   <section class="grid">
     <div class="card">
-      <h3>✍️ Tulisan</h3>
-      <p>Kumpulan tulisan ringan penuh refleksi dan cerita keseharian.</p>
-      <a href="tulisan.html">Jelajahi →</a>
+      <h3>Tulisan</h3>
+      <p>Kumpulan tulisan ringan penuh refleksi dan cerita sehari-hari.</p>
+      <a href="tulisan.html">Baca Tulisan →</a>
     </div>
     <div class="card">
-      <h3>📚 Artikel</h3>
-      <p>Tulisan lebih panjang, mendalam, dan penuh ide.</p>
-      <a href="artikel.html">Jelajahi →</a>
+      <h3>Artikel</h3>
+      <p>Bahasan lebih dalam seputar hidup, teknologi, dan inspirasi.</p>
+      <a href="artikel.html">Baca Artikel →</a>
     </div>
     <div class="card">
-      <h3>📖 Buku</h3>
-      <p>Rekomendasi dan catatan dari buku-buku yang saya baca.</p>
-      <a href="buku.html">Jelajahi →</a>
+      <h3>Buku</h3>
+      <p>Koleksi buku yang bisa jadi teman perjalanan berpikir.</p>
+      <a href="buku.html">Lihat Buku →</a>
     </div>
   </section>
 
