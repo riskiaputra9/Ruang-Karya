@@ -6,20 +6,22 @@
   <title>Tulisan | Ruang Karya</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:'Nunito',sans-serif; background:#faf9f6; color:#333; }
+    :root { --tosca:#20c997; --tosca-light:#e6f8f3; }
+    body { margin:0; font-family:'Nunito',sans-serif; background:#fdfdfd; color:#333; }
     header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
     nav { display:flex; justify-content:center; padding:1rem; }
-    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:#f4f4f9; margin:0 0.3rem; transition:0.3s; color:#333; font-weight:600; }
-    nav a:hover { background:#dcd6f7; }
-    .hero { text-align:center; padding:3rem 1.5rem; max-width:700px; margin:auto; }
-    .hero h1 { font-size:2.3rem; margin-bottom:0.5rem; }
-    .content { max-width:900px; margin:auto; padding:2rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; }
-    .card { background:#fff; border-radius:15px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.05); transition:0.3s; }
+    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
+    nav a:hover { background:var(--tosca); color:#fff; }
+    .hero { text-align:center; padding:3rem 1.5rem; }
+    .hero h1 { font-size:2.5rem; color:var(--tosca); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; padding:2rem; max-width:1100px; margin:auto; }
+    .card { background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.06); transition:0.3s; }
+    .card:hover { transform:translateY(-5px); }
     .card img { width:100%; height:180px; object-fit:cover; }
-    .card-body { padding:1rem 1.2rem; }
-    .card h3 { margin-top:0; }
-    .card:hover { transform:translateY(-3px); box-shadow:0 6px 12px rgba(0,0,0,0.08); }
-    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; }
+    .card-content { padding:1rem; }
+    .card-content h3 { margin:0.5rem 0; color:var(--tosca); }
+    .card-content p { font-size:0.95rem; color:#555; }
+    .card-content a { display:inline-block; margin-top:0.5rem; color:var(--tosca); font-weight:600; text-decoration:none; }
   </style>
 </head>
 <body>
@@ -29,46 +31,32 @@
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
-      <a href="tentang.html">Tentang</a>
+      <a href="about.html">Tentang</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>✍️ Kumpulan Tulisan</h1>
-    <p>Tempat coretan harian, refleksi, dan kisah kecil saya. Santai aja, semoga bisa jadi teman baca kamu ☕</p>
+    <h1>✍️ Tulisan</h1>
+    <p>Kumpulan coretan sederhana dari hati.</p>
   </section>
 
-  <section class="content">
+  <section class="grid">
     <div class="card">
-      <img src="https://source.unsplash.com/600x400/?rain,window" alt="Hujan">
-      <div class="card-body">
-        <h3>Menulis di Tengah Hujan</h3>
-        <p>Suara rintik hujan selalu berhasil membuat saya ingin menulis. Ada rasa damai yang hadir di balik bunyinya.</p>
+      <img src="https://source.unsplash.com/600x400/?nature,writing" alt="">
+      <div class="card-content">
+        <h3>Menemukan Tenang</h3>
+        <p>Sebuah refleksi tentang menemukan ketenangan dalam kesibukan sehari-hari.</p>
         <a href="#">Baca selengkapnya →</a>
       </div>
     </div>
-
     <div class="card">
-      <img src="https://source.unsplash.com/600x400/?coffee,writing" alt="Kopi">
-      <div class="card-body">
-        <h3>Secangkir Kopi, Segenggam Ide</h3>
-        <p>Tidak ada yang lebih nikmat selain menulis sambil ditemani aroma kopi di pagi hari.</p>
-        <a href="#">Baca selengkapnya →</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/600x400/?sunset,notebook" alt="Senja">
-      <div class="card-body">
-        <h3>Senja dan Catatan Kecil</h3>
-        <p>Warna langit sore seringkali memberi inspirasi untuk menuliskan cerita baru.</p>
+      <img src="https://source.unsplash.com/600x400/?coffee,book" alt="">
+      <div class="card-content">
+        <h3>Secangkir Kopi</h3>
+        <p>Kopi dan pagi yang selalu mengajarkan tentang kesederhanaan dan makna hidup.</p>
         <a href="#">Baca selengkapnya →</a>
       </div>
     </div>
   </section>
-
-  <footer>
-    <p>© 2025 Ruang Karya • Dibuat dengan hati 💜</p>
-  </footer>
 </body>
 </html>
