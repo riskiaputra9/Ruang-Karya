@@ -3,30 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang - Ruang Karya</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Tentang | Ruang Karya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:'Nunito',sans-serif; background:#faf9f6; color:#333; }
+    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
+    nav { display:flex; justify-content:center; padding:1rem; }
+    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:#f4f4f9; margin:0 0.3rem; transition:0.3s; color:#333; font-weight:600; }
+    nav a:hover { background:#dcd6f7; }
+    .hero { text-align:center; padding:3rem 1.5rem; max-width:800px; margin:auto; }
+    .hero h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+    .about { max-width:900px; margin:auto; padding:2rem; line-height:1.7; font-size:1.1rem; }
+    .about img { display:block; max-width:220px; margin:2rem auto; border-radius:50%; box-shadow:0 6px 12px rgba(0,0,0,0.1); }
+    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>✨ Tentang</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
-      <a href="about.html">Tentang</a>
+      <a href="tentang.html">Tentang</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Tentang Website Ini</h2>
-    <p>Website ini dibuat sebagai ruang dokumentasi karya, refleksi, dan gagasan. 
-    Semua tulisan, artikel, dan buku yang tersaji adalah bagian dari perjalanan berpikir 
-    dan berbagi untuk pembaca yang peduli pada pengetahuan dan perubahan sosial.</p>
-  </main>
+  <section class="hero">
+    <h1>👋 Tentang Ruang Karya</h1>
+    <p>Tempat sederhana untuk berbagi tulisan, artikel, dan karya yang lahir dari pikiran maupun pengalaman sehari-hari.</p>
+  </section>
+
+  <section class="about">
+    <img src="https://source.unsplash.com/400x400/?portrait,writer" alt="Foto Profil">
+    <p>Halo! Nama saya <strong>Riski A. Putra</strong>. Saya suka menulis, membaca, dan merenung tentang hal-hal kecil dalam hidup. Ruang Karya lahir dari keinginan sederhana: menyediakan ruang di mana ide bisa ditulis, dipelihara, dan mungkin bermanfaat untuk orang lain.</p>
+
+    <p>Di sini, kamu akan menemukan tulisan ringan, artikel reflektif, sampai rekomendasi buku yang pernah saya baca. Saya percaya bahwa kata-kata punya kekuatan untuk menyentuh hati dan menggerakkan pikiran.</p>
+
+    <p>Kalau kamu punya ide, komentar, atau sekadar ingin menyapa, jangan sungkan untuk menghubungi saya. Mari ngobrol dan berbagi cerita. 🌿</p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Ruang Karya</p>
+    <p>© 2025 Ruang Karya • Dibuat dengan hati 💜</p>
   </footer>
 </body>
 </html>
