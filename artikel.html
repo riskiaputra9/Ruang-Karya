@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artikel | Ruang Karya</title>
+  <title>Artikel - Ruang Karya</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root { --tosca:#20c997; --tosca-light:#e6f8f3; }
@@ -12,14 +12,13 @@
     nav { display:flex; justify-content:center; padding:1rem; }
     nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
     nav a:hover { background:var(--tosca); color:#fff; }
-    .hero { text-align:center; padding:3rem 1.5rem; }
-    .hero h1 { font-size:2.5rem; color:var(--tosca); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:2rem; max-width:1100px; margin:auto; }
-    .card { background:#fff; border-radius:16px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); transition:0.3s; }
-    .card:hover { transform:translateY(-5px); }
+    .hero { text-align:center; padding:2rem; background:var(--tosca-light); }
+    .hero h1 { color:var(--tosca); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; padding:2rem; max-width:900px; margin:auto; }
+    .card { background:#fff; border-radius:16px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
     .card h3 { margin-top:0; color:var(--tosca); }
-    .card p { color:#555; font-size:0.95rem; }
-    .card a { display:inline-block; margin-top:0.5rem; color:var(--tosca); font-weight:600; text-decoration:none; }
+    .card p { font-size:0.95rem; color:#555; }
+    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; background:var(--tosca-light); margin-top:3rem; }
   </style>
 </head>
 <body>
@@ -34,21 +33,23 @@
   </header>
 
   <section class="hero">
-    <h1>📚 Artikel</h1>
-    <p>Kumpulan tulisan yang lebih panjang, mendalam, dan reflektif.</p>
+    <h1>Artikel 📚</h1>
+    <p>Tulisan mendalam tentang kehidupan, refleksi, dan gagasan baru.</p>
   </section>
 
   <section class="grid">
     <div class="card">
-      <h3>Belajar dari Kesalahan</h3>
-      <p>Sebuah artikel tentang bagaimana setiap kegagalan bisa menjadi guru terbaik dalam perjalanan hidup kita.</p>
-      <a href="#">Baca selengkapnya →</a>
+      <h3>Hidup di Era Digital</h3>
+      <p>Bagaimana teknologi mengubah cara kita berpikir, bekerja, dan berinteraksi setiap hari.</p>
     </div>
     <div class="card">
-      <h3>Waktu dan Makna</h3>
-      <p>Merenungkan kembali bagaimana waktu membentuk kita, dan bagaimana kita memberi makna pada setiap detik.</p>
-      <a href="#">Baca selengkapnya →</a>
+      <h3>Menemukan Makna</h3>
+      <p>Sebuah refleksi panjang tentang arti kesederhanaan dan kebahagiaan sejati.</p>
     </div>
   </section>
+
+  <footer>
+    © 2025 Ruang Karya • Dibuat dengan hati 💚
+  </footer>
 </body>
 </html>
