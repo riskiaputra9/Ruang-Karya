@@ -4,93 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruang Karya</title>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Nunito', sans-serif;
-      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
-      color: #333;
-      line-height: 1.6;
+    :root {
+      --tosca: #20c997;
+      --tosca-light: #e6f8f3;
     }
-    header {
-      background: #ffffffaa;
-      backdrop-filter: blur(6px);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      padding: 0.6rem 1rem;
-      border-radius: 12px;
-      background: #f4f4f9;
-      margin: 0 0.3rem;
-      transition: 0.3s;
-      color: #333;
-      font-weight: 600;
-    }
-    nav a:hover {
-      background: #dcd6f7;
-      color: #222;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      max-width: 700px;
-      margin: auto;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .btn {
-      display: inline-block;
-      background: #dcd6f7;
-      padding: 0.8rem 1.5rem;
-      border-radius: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #b8bedd;
-    }
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      margin-bottom: 1.5rem;
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
+    body { margin:0; font-family:'Nunito',sans-serif; background:#fdfdfd; color:#333; }
+    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05); position:sticky; top:0; z-index:10; }
+    nav { display:flex; justify-content:center; padding:1rem; }
+    nav a { text-decoration:none; padding:0.6rem 1rem; border-radius:12px; background:var(--tosca-light); margin:0 0.3rem; transition:0.3s; color:var(--tosca); font-weight:600; }
+    nav a:hover { background:var(--tosca); color:#fff; }
+    .hero { text-align:center; padding:4rem 1.5rem; max-width:800px; margin:auto; }
+    .hero h1 { font-size:2.8rem; margin-bottom:1rem; color:var(--tosca); }
+    .hero p { font-size:1.2rem; line-height:1.6; }
+    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#555; }
   </style>
 </head>
 <body>
@@ -100,38 +28,17 @@
       <a href="tulisan.html">Tulisan</a>
       <a href="artikel.html">Artikel</a>
       <a href="buku.html">Buku</a>
-      <a href="tentang.html">Tentang</a>
+      <a href="about.html">Tentang</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>👋 Selamat datang di Ruang Karya</h1>
-    <p>Tempat saya berbagi cerita, artikel, dan buku. Santai aja, nikmati bacaan yang ada di sini 🌿</p>
-    <a href="tulisan.html" class="btn">Lihat Tulisan</a>
-  </section>
-
-  <section class="content">
-    <div class="card">
-      <h3>✍️ Tulisan Terbaru</h3>
-      <p>Coretan harian yang lahir dari secangkir kopi ☕</p>
-      <a href="tulisan.html">Baca selengkapnya →</a>
-    </div>
-
-    <div class="card">
-      <h3>📖 Artikel Pilihan</h3>
-      <p>Refleksi dan ide-ide yang saya tuangkan untuk menemani pikiran.</p>
-      <a href="artikel.html">Jelajahi Artikel →</a>
-    </div>
-
-    <div class="card">
-      <h3>📚 Kumpulan Buku</h3>
-      <p>Karya lengkap yang saya rangkai dari banyak tulisan kecil.</p>
-      <a href="buku.html">Lihat Buku →</a>
-    </div>
+    <h1>Selamat Datang di Ruang Karya 🌿</h1>
+    <p>Sebuah ruang sederhana untuk menulis, berbagi ide, dan menyimpan karya yang lahir dari pikiran maupun pengalaman sehari-hari.</p>
   </section>
 
   <footer>
-    <p>© 2025 Ruang Karya • Dibuat dengan hati 💜</p>
+    <p>© 2025 Ruang Karya • Dibuat dengan hati 💚</p>
   </footer>
 </body>
 </html>
