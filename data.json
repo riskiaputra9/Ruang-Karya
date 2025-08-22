@@ -1,30 +1,44 @@
-[
-  {
-    "judul": "Pendidikan di Era Digital",
-    "kategori": "Artikel",
-    "tahun": 2025,
-    "ringkasan": "Refleksi tentang transformasi pendidikan di era teknologi.",
-    "link": "#"
-  },
-  {
-    "judul": "Filsafat Hidup Sehari-hari",
-    "kategori": "Tulisan",
-    "tahun": 2024,
-    "ringkasan": "Kumpulan refleksi ringan namun bermakna.",
-    "link": "#"
-  },
-  {
-    "judul": "Masyarakat dan Keadilan",
-    "kategori": "Buku",
-    "tahun": 2023,
-    "ringkasan": "Buku mengenai keadilan sosial dalam masyarakat modern.",
-    "link": "#"
-  },
-  {
-    "judul": "Catatan Harian Seorang Pemikir",
-    "kategori": "Tulisan",
-    "tahun": 2023,
-    "ringkasan": "Kumpulan catatan pribadi dan refleksi harian.",
-    "link": "#"
-  }
-]
+{
+  "tulisan": [
+    {
+      "judul": "Menikmati Senja",
+      "isi": "Senja selalu mengingatkan bahwa setiap akhir memiliki keindahan tersendiri."
+    },
+    {
+      "judul": "Kopi Pagi",
+      "isi": "Secangkir kopi sering kali lebih dari sekadar minuman, ia adalah awal semangat."
+    },
+    {
+      "judul": "Langkah Kecil",
+      "isi": "Setiap langkah kecil akan membawa kita mendekat pada tujuan yang lebih besar."
+    }
+  ],
+  "artikel": [
+    {
+      "judul": "Hidup di Era Digital",
+      "isi": "Teknologi mengubah cara kita belajar, bekerja, dan berinteraksi setiap harinya."
+    },
+    {
+      "judul": "Menemukan Makna",
+      "isi": "Refleksi sederhana tentang arti kesederhanaan, rasa syukur, dan bahagia."
+    },
+    {
+      "judul": "Belajar dari Alam",
+      "isi": "Alam selalu mengajarkan keseimbangan, kesabaran, dan keteguhan hati."
+    }
+  ],
+  "buku": [
+    {
+      "judul": "Filosofi Kopi",
+      "isi": "Dee Lestari mengisahkan tentang kopi, kehidupan, dan makna sederhana."
+    },
+    {
+      "judul": "Laskar Pelangi",
+      "isi": "Kisah perjuangan anak-anak Belitung dalam meraih mimpi lewat pendidikan."
+    },
+    {
+      "judul": "Atomic Habits",
+      "isi": "James Clear mengajarkan bagaimana kebiasaan kecil bisa mengubah hidup."
+    }
+  ]
+}
